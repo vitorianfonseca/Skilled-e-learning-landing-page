@@ -186,7 +186,7 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--blue);
-  height: 7rem;
+  height: 8rem;
 }
 
 .footer_container {
