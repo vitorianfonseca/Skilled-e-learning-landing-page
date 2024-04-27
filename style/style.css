@@ -331,7 +331,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 44%);
-    gap: 10rem 2rem;
+    gap: 8rem 2rem;
     margin-bottom: 140px;
     margin-left: auto;
     margin-right: auto;
@@ -358,7 +358,7 @@ body {
   }
 
   .footer_container {
-    margin: 0rem 10% -5rem;
+    margin: 5rem 10% 0rem;
   }
 
   .intro_card,
