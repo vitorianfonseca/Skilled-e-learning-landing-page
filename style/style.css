@@ -210,6 +210,8 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  width: 10.4375rem;
+  height: 3.9375rem;
 }
 
 .footer_button:hover {
