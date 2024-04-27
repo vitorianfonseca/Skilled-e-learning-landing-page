@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+:root {
+  --blue-hover: #666ca3;
+  --blue: #13183f;
+  --text-gray: #83869a;
+  --main-orange: #f74780;
+  --main-pink: #ffa7c3;
+  --white: #ffffff;
+  --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+  /* max-width: 90rem; */
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+/* HEADER */
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--blue);
+      padding-top: 1rem;
+      margin: 0rem 5%;
+    }
+
+    .header_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* button style */
+      background-color: var(--blue);
+      border-radius: 1.75rem;
+      width: 10.4375rem;
+      height: 3.5rem;
+
+      /* text style */
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .header_button:hover {
+      background-color: var(--blue-hover);
+      cursor: pointer;
+    }
+
+/* HEADER */
+
+/* HERO SECTION */
+
+.hero {
+  margin: 0rem 5%;
+}
+
+.hero h1 {
+  max-width: 28rem;
+  margin-top: 11rem;
+  margin-bottom: 1.8rem;
+
+  color: var(--blue);
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.hero_text {
+  max-width: 27rem;
+  color: var(--text-gray);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+
+
+.hero_button {
+  border-radius: 1.96875rem;
+  width: 10.4375rem;
+  height: 3.9375rem;
+  margin-top: 2.5rem;
+
+  /* button style */
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  
+  /* text style */
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero_button:hover {
+  background: linear-gradient(0deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),var(--primary-gradient);
+  cursor: pointer;
+}
+
+.hero_image_mobile {
+  background-image: url("assets/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 2.8rem;
+  height: 26rem;
+  width: 25rem;
+  margin: auto;
+}
+
+/* CARD SECTION */
+
+.cards {
+  margin: 0rem 2%;
+}
+
+.intro_card {
+  background: var(--primary-gradient);
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  height: 7.5rem;
+  /* text style */
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem; 
+}
+
+.course_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 1rem 1.5rem 0rem;
+  margin: 2.5rem 0rem;
+  border-radius: 0.625rem;
+}
+
+.course_card_title {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-top: -1.6rem;
+}
+
+.course_card_text {
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course_card_icon {
+  position: relative;
+  top: -2.8rem;
+  display: block;
+  width: 3.5rem;
+}
+
+
+.course_card_link {
+  text-decoration: none;
+  color: var(--main-orange);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.course_card_link:hover {
+  color: var(--main-pink);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  height: 7rem;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: var(--white);
+  width: 100%;
+}
+
+.footer_button {
+  background: var(--secondary-gradient);
+  color: #ffffff;
+  border-radius: 50px;
+  width: 8rem;
+  height: 3rem;
+  line-height: 3rem; /* vertically center the text */
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.footer_button:hover {
+  background: linear-gradient(0deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  cursor: pointer;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .hero_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 80vh;
+    background-image: url("assets/image-hero-tablet.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .header_button {
+    z-index: 1;
+  }
+
+  .hero_button {
+    margin-bottom: 10rem;
+    z-index: 1;
+  }
+
+  .hero_image_mobile {
+    display: none;
+  }
+
+  .hero h1  {
+    margin-top: 6rem;
+  }
+
+
+  .intro_card {
+    margin: 40px 0 0 0;
+    padding: 56px 32px;
+  }
+
+  .hero_title {
+    font-size: 36px;
+  }
+
+  .hero_text {
+    width: 48%;
+  }
+
+  .hero_text,
+  .course_card_text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .course_cards {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 1rem 0.6rem;
+  }
+
+  .intro_card,
+  .course_card {
+    width: auto;
+    height: 16.1875rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .header {
+    margin: 0rem 10%;
+  } 
+
+  .hero {
+    margin: 0rem 10%;
+  }
+
+  .cards {
+    margin: 0rem 8%;
+  }
+
+
+  .hero_image {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40rem;
+    height: 90vh;
+    background-image: url("assets/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .hero_title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  .header_button {
+    z-index: 1;
+  }
+
+  .hero_image_mobile {
+    display: none;
+  }
+
+  .course_cards {
+    width: 95%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 44%);
+    gap: 56px 30px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .intro_card {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    margin-top: 15rem;
+  }
+
+  .intro_card {
+    margin: 40px 0 0 0;
+    padding: 56px 32px;
+  }
+
+
+  .footer_container, .hero {
+    width: 100%;
+
+  }
+
+  .footer_container {
+    margin: 0rem 10%;
+  }
+
+  .intro_card,
+  .course_card {
+    width: auto;
+    height: 20.125rem;
+  }
+}
