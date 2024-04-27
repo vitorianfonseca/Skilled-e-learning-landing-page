@@ -331,7 +331,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 44%);
-    gap: 56px 30px;
+    gap: 5rem 2rem;
     margin-bottom: 140px;
     margin-left: auto;
     margin-right: auto;
@@ -348,7 +348,7 @@ body {
 
   .intro_card {
     margin: 40px 0 0 0;
-    padding: 5rem 2rem;
+    padding: 56px 32px;
   }
 
 
